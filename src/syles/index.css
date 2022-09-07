@@ -1,0 +1,148 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body{
+    background-color: var(--color2);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+    width: 100%;
+    background-color: var(--color1);
+    position: fixed;
+}
+header h1{
+    font-family: var(--font);
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-bottom: 5px;
+    color: var(--black);
+}
+header div{
+    display: flex;
+    margin-right: 1rem;
+   
+}
+header div button{
+    font-family: var(--font);
+    margin-right: 1rem;
+    color: black;
+    border-radius: 5px;
+    padding: 0.3rem;
+}
+header div img{
+    width: 1rem;
+
+}
+.darkmodeBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+}
+main{
+    background-color: var(--color2);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.empresas{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    max-width: 300px;
+    margin-top: 20px;
+    align-items: center;
+}
+.empresaDiv{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font);
+    color: var(--black);
+    border: 1px solid var(--black);
+    border-radius: 0.5rem;
+    height: 170px;
+    width: 220px;
+    padding: 1rem;
+    background-color: var(--color3);
+
+}
+.empresas div div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5rem;    
+}
+.empresas h2{
+    max-width: 90px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+.secao{
+    margin-left: auto;
+    border-radius: 1rem;
+    width: 5rem;
+    height: 1.2rem;
+    border: 1px solid var(--black);
+    background-color: var(--green);
+    display: flex;
+    justify-content: center;
+
+}
+.empresaDiv p{
+    margin-top: 1rem;
+}
+nav{
+    margin-top: 100px;
+    width: 100%;
+}
+ul{
+    width: 300px;
+    display: flex;
+    overflow-x: auto;
+    height: 3rem;
+    margin: 0 auto;
+    border-right: 1px solid var(--black);
+}
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li button{
+    background-color: var(--color1);
+    color: var(--black);
+    font-family: var(--font);
+    font-size: 1.2rem;
+    list-style: none;
+    background-color: var(--color1);
+    width: 6rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid var(--black);
+    margin-left: 1rem;
+}
+@media (min-width:500px){
+    ul{
+        width: 450px;
+        border: none;
+    }
+}
+@media (min-width:768px){
+    .empresas{
+        display: flex;
+        flex-direction: row;
+        max-width: 80%;
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

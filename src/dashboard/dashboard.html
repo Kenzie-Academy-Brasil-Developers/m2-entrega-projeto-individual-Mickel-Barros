@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../syles/general.css">
+    <link rel="stylesheet" href="../syles/index.css">
+    <link rel="stylesheet" href="../syles/modal.css">
+    <link rel="stylesheet" href="../syles/dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>New Company</h1>
+        <div>
+            <button class="btnSair">
+                Sair
+            </button>
+            <button class="darkmodeBtn">
+                <img src="../assets/luga.png" alt="darkmode">
+            </button>
+            <button class="btnConta">
+                Conta
+            </button>
+        </div>
+    </header>
+    <main>
+        <!-- <div class="caixa">
+            <div class="login appear">
+                <div>
+                    <h2>Deseja alterar seus dados?</h2>
+                    <button class="fecharLogin">X</button>
+                </div>
+                <input type="email" placeholder="Digite seu novo email">
+                <input class="senha" type="password" placeholder="Digite sua nova senha">
+                <button class="btnEntrar">Entrar</button>
+            </div>
+        </div> -->
+        <!-- <h2>Sua empresa:</h2>
+        <div class="empresas"></div> -->
+    </main>
+    <button>
+        <img src="../assets/seta.png" alt="seta">
+    </button>
+    <aside>
+        <nav>
+            <ul>
+                <li>
+                    <button class="setores">Setores</button>
+                </li>
+                <li>
+                    <button class="empresasCriadas">Empresas</button>
+                </li>
+                <li>
+                    <button class="departamentos">Departamentos</button>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <script type="module" src="../scripts/empresas.js"></script>
+    <script type="module" src="../scripts/setores.js"></script>
+    <script type="module" src="../scripts/dashboard.js"></script>
+    <script type="module" src="../scripts/departamentos.js"></script>
+    <script type="module" src="../scripts/api-dashboard.js"></script>
+    <script type="module" src="../scripts/dashboard-admin.js"></script>
+</body>
+</html>

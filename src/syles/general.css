@@ -1,0 +1,24 @@
+*{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --font: "Barlow Condensed", sans-serif;
+    --color1: #B7C6E3;
+    --color2: #E3EDFB;
+    --color3: #E0DFE5;
+    --black: black;
+    --green: #79f59e;
+    --white: white;
+
+}
+.darkmode {
+    --color1: #103786;
+    --color2: #242528;
+    --color3: #232233;
+    --black: white;
+    --green: #01611b;
+    --white: black;
+    
+}

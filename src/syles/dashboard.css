@@ -1,0 +1,322 @@
+header button{
+    width: 3rem;
+}
+header{
+    top: 0;
+    z-index: 2;
+}
+body, html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+}
+main{
+    width: 100%;
+    flex-direction: column;
+}
+main div{
+    margin: 0 auto;
+}
+.containerSetores{
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: flex;
+    width: 70%;
+    border-right: 1px solid var(--black);
+    border-left: 1px solid var(--black);
+}
+.containerSetores h2{
+    width: 40px;
+    font-size: 1.2rem;
+}
+.listaSetores{
+    width: 115px;
+}
+.listaSetores h2{
+    margin-top: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+aside{
+    width: 40%;
+    border-right: 1px solid var(--black);
+    position: fixed;
+    left: -50%;
+    height: 100%;
+    transition: 0.5s;
+    background-color: var(--color2);
+
+}
+.abrirAside{
+    left: 0px;
+    transition: 0.5s;
+}
+body > button{
+    position: fixed;
+    background-color: white;
+    top: 4rem;
+    width: 30px;
+    border-radius: 0 5px 5px 0;
+    transition: 0.2s;
+    left: 0;
+    border: 1px solid var(--black);
+}
+.extenderBtn{
+    left: 40%;
+    transition: 0.5s;
+}
+body > button > img{
+    height: 20px;
+    margin-left: 1px;
+    margin-top: 2px;
+    width: 20px;
+
+}
+ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+li button{
+    border-radius: 0;
+    width: 100%;
+    border: none;
+    margin-left: 0;
+    margin-top: 1rem;
+}
+main{
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+h2{
+    font-family: var(--font);
+    margin-top: 60px;
+    margin-left: 1rem;
+    font-size: 1.4rem;
+    color: var(--black);
+}
+.btnConta{
+   display: none;
+}
+.esconder{
+    display: none;
+}
+.caixa{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+.divCriarEmpresa{
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+
+}
+input{
+    height: 1.7rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+    padding-left: 10px;
+    background-color: var(--color3);
+    color: var(--black);
+    border: 1px solid var(--black);
+}
+::placeholder{
+    color: var(--black);
+
+}
+h2{
+    margin: 5rem auto 0;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 320px;
+}
+button{
+    background-color: var(--color1);
+    color: var(--black);
+    margin-top: 1.2rem;
+    height: 1.7rem;
+    font-family: var(--font);
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid var(--black);
+}
+.secao{
+    width: 5rem;
+    margin-left: auto;
+}
+header div input{
+    margin: 0;
+    margin-right: 1rem;
+}
+header div{
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+}
+header div button{
+    margin: 0;
+    margin-right: 1rem;
+    background-color: #E3EDFB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.listaDepartamentos{
+    max-width: 500px;
+    width: 80%;
+    font-family: var(--font);
+    gap: 1rem;
+}
+.listaDepartamentos div{
+    display: flex;
+    margin-top: 1rem;
+    border-left: 1px solid var(--black);
+    border-right: 1px solid var(--black);
+}
+.listaDepartamentos span{
+    margin-left: 0.5rem;
+}
+.listaDepartamentos p{
+    margin-left: 0.5rem;
+}
+h3{
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+.listaDepartamentos h2{
+    margin-top: 1.3rem;
+    font-size: 1.2rem;
+}
+.usuariosSemDP{
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    border-left: 1px solid var(--black);
+    border-right: 1px solid var(--black);
+}
+.usuariosSemDP div{
+    width: 50px;
+    height: 50px;
+    margin: 0;
+}
+.usuariosSemDP h2{
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+}
+.usuariosSemDP p{
+    margin: 0 auto;
+}
+.divTodos{
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 100px;
+    margin-top: 1rem;
+    border-left: 1px solid var(--black);
+    border-right: 1px solid var(--black);
+}
+.divTodos div{
+    width: 50px;
+    margin: 0;
+    height: 50px;
+}
+.divTodos p{
+    margin: 0 auto;
+}
+.divTodos h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}
+p{
+    color: var(--black);
+}
+span{
+    color: var(--black);
+}
+h3{
+    color: var(--black);
+}
+.empresaDiv h2{
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+    font-size: 1.5rem;
+}
+.empresaDiv div{
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+}
+.divSeuDepartamento p{
+    font-family: var(--font);
+}
+.divSuaEmpresa{
+
+}
+@media (min-width: 768px) {
+    input{
+        height: 2.5rem;
+    }
+    button{
+        height: 2.5rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    div{
+    max-width: 500px;
+    }
+    aside{
+        width: 20%;
+    }
+    .extenderBtn{
+        left: 20%;
+    }
+    header button{
+        height: 2rem;
+    }
+    header div {
+        align-items: center;
+        justify-content: center;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    span{
+        font-size: 1.1rem;
+    }
+    .divTodos div{
+        width: 70px;
+    }
+    .listaDepartamentos {
+        max-width: 700px;
+        width: 600px;
+        flex-direction: row;
+    }
+    .usuariosSemDP{
+        max-width: 700px;
+        width: 600px;
+        gap: 2rem;
+    }
+    .container{
+        max-width: 600px;
+    }
+}

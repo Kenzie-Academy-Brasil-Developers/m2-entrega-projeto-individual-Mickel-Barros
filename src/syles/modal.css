@@ -1,0 +1,157 @@
+.login{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    font-family: var(--font);
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 200px;
+    width: 300px;
+    top: -50%;
+    transition: 1.3s;
+    z-index: 2;
+}
+.login div{
+    display: flex;
+    width: 80%;
+}
+.login div button{
+    background-color: white;
+    color: red;
+    margin-left: auto;
+    width: 1rem;
+}
+.login h2{
+    margin-top: 1rem;
+}
+.login input{
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 1rem auto 0;
+    height: 2rem;
+    padding-left: 15px;
+}
+.login button{
+    margin-top: 1rem;
+    background-color: #B7C6E3;
+    height: 1.5rem;
+    width: 5rem;
+    border-radius: 5px;
+}
+.appear{
+    top: 30%;
+    transition: 1s;
+}
+.hidden{
+    height: 0%;
+    transition: 1s;
+}
+.hidden2{
+    bottom: 0%;
+    transition: 1s;
+}
+.black{
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    z-index: 1;
+   
+}
+.black2{
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    z-index: 3;
+   
+}
+.modal{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font);
+    border-radius: 5px;
+    height: 120px;
+    width: 280px;
+    z-index: 0;
+    color: white;
+    font-size: 1.3rem;
+    background-color: #D44C48;
+    bottom: -45%;
+    transition: 0.5s;
+    z-index: 3;
+}
+.modal button{
+    font-family: var(--font);
+    font-size: 1.1rem;
+    margin-top: 1.2rem;
+    height: 1.4rem;
+    width: 5rem;
+    border-radius: 1rem;
+}
+.modalAppear{
+    bottom: 45%;
+    transition: 0.5s;
+}
+.cadastro{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    font-family: var(--font);
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 300px;
+    width: 300px;
+    top: -150%;
+    transition: 1.3s;
+    z-index: 2;
+}
+.cadastro div{
+    display: flex;
+    width: 80%;
+}
+.cadastro div button{
+    background-color: white;
+    color: red;
+    margin-left: auto;
+    width: 1rem;
+}
+.cadastro h2{
+    margin-top: 1rem;
+}
+.cadastro input{
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 1rem auto 0;
+    height: 2rem;
+    padding-left: 15px;
+}
+.cadastro button{
+    margin-top: 1rem;
+    background-color: #B7C6E3;
+    height: 1.5rem;
+    width: 5rem;
+    border-radius: 5px;
+}
+.appearCadastro{
+    top: 20%;
+}
+
+@media (min-width: 500px){
+    .modalAppear{
+        bottom: 55%;
+    }
+
+}
