@@ -162,8 +162,6 @@ export function empresaFuncionario(arr, id){
     arr.forEach(element => {
         if(element.uuid === id){
             console.log(element)
-            
-            
 
             const empresa = document.createElement("div")
             const div = document.createElement("div")
@@ -186,3 +184,13 @@ export function empresaFuncionario(arr, id){
         }
     })
 }
+function fecharModal(){
+    const btnFecharModal = document.querySelector(".fecharModal")
+    btnFecharModal.addEventListener("click", () => {
+        const modal = document.querySelector(".modalAppear")
+        modal.className = "modal"
+        const hidden2 = document.querySelector(".hidden2")
+        hidden2.className = "hidden2"
+    })
+}
+fecharModal()

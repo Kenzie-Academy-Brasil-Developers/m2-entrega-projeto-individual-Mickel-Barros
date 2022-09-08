@@ -42,7 +42,7 @@ export class Api{
         .then(res => res.json())
         .then(res => {console.log(res)
         })
-        .catch(err => console.log(err))
+        .catch(err => {console.log(err)})
     }
     static async listarEmpresas(id){
         const empresas = await fetch(`http://localhost:6278/companies`,{

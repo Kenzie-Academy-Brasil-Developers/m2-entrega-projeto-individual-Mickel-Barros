@@ -14,6 +14,12 @@ export class apiAdmin{
         })
         .then(res => res.json())
         .then(res => {console.log(res)
+            if(res.error){
+                const modal = document.querySelector(".modal")
+                modal.classList.toggle("modalAppear")
+                const black = document.querySelector(".hidden2")
+                black.classList.toggle("appearBlack")
+            }
         })
         .catch(err => console.log(err))
     }
@@ -60,6 +66,12 @@ export class apiAdmin{
         })
         .then(res => res.json())
         .then(res => {console.log(res)
+            if(res.error){
+                const modal = document.querySelector(".modal")
+                modal.classList.toggle("modalAppear")
+                const black = document.querySelector(".hidden2")
+                black.classList.toggle("appearBlack")
+            }
         })
         .catch(err => console.log(err))
     }
@@ -73,6 +85,12 @@ export class apiAdmin{
         })
         .then(res => res.json())
         .then(res => {console.log(res)
+            if(res.error){
+                const modal = document.querySelector(".modal")
+                modal.classList.toggle("modalAppear")
+                const black = document.querySelector(".hidden2")
+                black.classList.toggle("appearBlack")
+            }
         })
         .catch(err => console.log(err))
     }
@@ -84,6 +102,12 @@ export class apiAdmin{
         })
         .then(res => res.json())
         .then(res => {console.log(res)
+            if(res.error){
+                const modal = document.querySelector(".modal")
+                modal.classList.toggle("modalAppear")
+                const black = document.querySelector(".hidden2")
+                black.classList.toggle("appearBlack")
+            }
         })
         .catch(err => console.log(err))
     }
@@ -96,7 +120,12 @@ export class apiAdmin{
         .then(res => res.json())
         .then(res => {console.log(res)
         })
-        .catch(err => console.log(err))
+        .catch(err => {console.log(err)
+            const modal = document.querySelector(".modal")
+            modal.classList.toggle("modalAppear")
+            const black = document.querySelector(".hidden2")
+            black.classList.toggle("appearBlack")
+        })
     }
     static async editarDepartamento(obj, id){
         console.log(obj, id)
@@ -109,7 +138,12 @@ export class apiAdmin{
         .then(res => res.json())
         .then(res => {console.log(res)
         })
-        .catch(err => console.log(err))
+        .catch(err => {console.log(err)
+            const modal = document.querySelector(".modal")
+            modal.classList.toggle("modalAppear")
+            const black = document.querySelector(".hidden2")
+            black.classList.toggle("appearBlack")
+        })
     }
     static async listarTodosUsuarios(){
         const token = localStorage.getItem("@KenzieEmpresa:token")
@@ -145,7 +179,11 @@ export class apiAdmin{
         .then(res => res.json())
         .then(res => {console.log(res)
         })
-        .catch(err => console.log(err))
+        .catch(err => {console.log(err)
+        const modal = document.querySelector(".modal")
+        modal.classList.toggle("modalAppear")
+        const black = document.querySelector(".hidden2")
+        black.classList.toggle("appearBlack")})
     }
     static async listarEmpresas(){
         const empresas = await fetch(`http://localhost:6278/companies`,{
