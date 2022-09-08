@@ -6,8 +6,6 @@ function darkmode(){
         const header = document.querySelector("header")
         const body = document.querySelector("body") 
         const main = document.querySelector("main")
-        /* const empresas = document.querySelector(".empresas")
-        empresas.classList.toggle("darkmode") */
         body.classList.toggle("darkmode")
         header.classList.toggle("darkmode")
         main.classList.toggle("darkmode")
@@ -118,15 +116,73 @@ function usuarioComum(){
         const divDepartamento = document.createElement("div")
         divDepartamento.className = "divSeuDepartamento"
         const h2Departamento = document.createElement("h2")
-        const funcionariosDepartamento = document.createElement("p")
 
         h2Departamento.innerText = "Seu Departamento"
-        funcionariosDepartamento.innerText = "Funcionários que trabalham no seu departamento:"
         Api.usuarioCoworkers()
 
         main.append(div, divDepartamento, divEmpresa)
-        divDepartamento.append(h2Departamento, funcionariosDepartamento)
+        divDepartamento.append(h2Departamento)
         divEmpresa.append(h2Empresa, suaEmpresa)
     }
 }
 usuarioComum()
+
+export function mostrarCoworkers(arr){
+    const id = localStorage.getItem("@KenzieEmpresa:id")
+    const seuDp = document.querySelector(".divSeuDepartamento")
+    const divDp = document.createElement("div")
+    divDp.className = "divDp"
+    const nameDp = document.createElement("h2")
+    const descricao = document.createElement("p")
+    nameDp.innerText = arr[0].name
+    descricao.innerText = arr[0].description
+    divDp.append(nameDp, descricao)
+    for(let i in arr[0].users){
+        if(arr[0].users[i].uuid !== id){
+            const div = document.createElement("div")
+            const name = document.createElement("h2")
+            const email = document.createElement("p")
+            const level = document.createElement("p")
+            const tipo = document.createElement("p")
+            const titulo = document.createElement("p")
+            titulo.innerText = "Funcionários que trabalham no seu departamento:"
+            name.innerText = arr[0].users[i].username
+            email.innerText = arr[0].users[i].email
+            level.innerText = arr[0].users[i].professional_level
+            tipo.innerText = arr[0].users[i].kind_of_work
+
+            div.append(titulo, name, email, level, tipo)
+            seuDp.append(divDp, div)
+        }
+    }
+    const empresa = arr[0].company_uuid
+    Api.listarEmpresas(empresa)
+} 
+export function empresaFuncionario(arr, id){
+    arr.forEach(element => {
+        if(element.uuid === id){
+            console.log(element)
+            
+            
+
+            const empresa = document.createElement("div")
+            const div = document.createElement("div")
+            const nome = document.createElement("h2")
+            const secao = document.createElement("span")
+            const horario = document.createElement("span")
+            const descricao = document.createElement("p")
+    
+            nome.innerText = element.name
+            secao.innerText = element.sectors.description
+            horario.innerText = element.opening_hours
+            descricao.innerText = element.description
+            secao.className = "secao"
+            empresa.className = "empresaDiv"
+    
+            div.append(nome, secao)
+            empresa.append(div, horario, descricao)
+            const empresas = document.querySelector(".divSuaEmpresa")
+            empresas.appendChild(empresa)
+        }
+    })
+}

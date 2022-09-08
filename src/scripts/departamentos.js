@@ -1,4 +1,4 @@
-import { apiAdmin } from "./dashboard-admin.js"
+import { apiAdmin } from "./api-dashboard-admin.js"
 import { fechar } from "./dashboard.js"
 function menuDepartamentos(){
     const btn = document.querySelector(".departamentos")

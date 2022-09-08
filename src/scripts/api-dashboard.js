@@ -1,3 +1,5 @@
+import { mostrarCoworkers } from "./dashboard.js"
+import { empresaFuncionario } from "./dashboard.js"
 export class Api{
     static async usuarioDepartamento(){
         const token = localStorage.getItem("@KenzieEmpresa:token")
@@ -22,6 +24,7 @@ export class Api{
         })
         .then(res => res.json())
         .then(res => {console.log(res)
+            mostrarCoworkers(res)
         })
         .catch(err => console.log(err))
     }
@@ -39,6 +42,16 @@ export class Api{
         .then(res => res.json())
         .then(res => {console.log(res)
         })
+        .catch(err => console.log(err))
+    }
+    static async listarEmpresas(id){
+        const empresas = await fetch(`http://localhost:6278/companies`,{
+            method: "GET",
+            headers:{"Authorization":`Bearer null`},
+        })
+        .then(res => res.json())
+        .then(res => {
+        empresaFuncionario(res, id)})
         .catch(err => console.log(err))
     }
 }

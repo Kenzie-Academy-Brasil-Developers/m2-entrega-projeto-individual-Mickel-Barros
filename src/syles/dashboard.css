@@ -267,9 +267,26 @@ h3{
 }
 .divSeuDepartamento p{
     font-family: var(--font);
+    margin-left: 1rem;
 }
-.divSuaEmpresa{
+.divSeuDepartamento > h2{
+    margin-bottom: 2rem;
+}
+.divSeuDepartamento > p{
+    margin-bottom: 2rem;
+}
+.divSeuDepartamento div {
 
+    border-left: 1px solid var(--black);
+    border-right: 1px solid var(--black);
+    
+}
+.divSeuDepartamento div h2{
+    margin-top: 0;
+    margin-left: 1rem;
+}
+.divDp{
+    margin-bottom: 3rem;
 }
 @media (min-width: 768px) {
     input{
