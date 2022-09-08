@@ -10,13 +10,12 @@ function darkmode(){
         body.classList.toggle("darkmode")
         header.classList.toggle("darkmode")
         main.classList.toggle("darkmode")
-        /* console.log(img.src)
         if(img.src =="m2-entrega-projeto-individual-Mickel-Barros/src/assets/luga.png"){
             console.log("a")
             img.src = "http://127.0.0.1:5500/m2-entrega-projeto-individual-Mickel-Barros/src/assets/sol.jpg"
             return
         }
-        img.src = "http://127.0.0.1:5500/m2-entrega-projeto-individual-Mickel-Barros/src/assets/luga.png" */
+        img.src = "http://127.0.0.1:5500/m2-entrega-projeto-individual-Mickel-Barros/src/assets/luga.png"
     })
 }
 darkmode()

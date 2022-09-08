@@ -9,11 +9,11 @@ function darkmode(){
         body.classList.toggle("darkmode")
         header.classList.toggle("darkmode")
         main.classList.toggle("darkmode")
-        /* if(img.src =="http://127.0.0.1:5500/m2-entrega-projeto-individual-Mickel-Barros/src/assets/luga.png"){
+        if(img.src =="http://127.0.0.1:5500/m2-entrega-projeto-individual-Mickel-Barros/src/assets/luga.png"){
             img.src = "http://127.0.0.1:5500/m2-entrega-projeto-individual-Mickel-Barros/src/assets/sol.jpg"
             return
         }
-        img.src = "http://127.0.0.1:5500/m2-entrega-projeto-individual-Mickel-Barros/src/assets/luga.png" */
+        img.src = "http://127.0.0.1:5500/m2-entrega-projeto-individual-Mickel-Barros/src/assets/luga.png"
     })
 }
 darkmode()
@@ -44,12 +44,12 @@ function abrirMenu(){
         const aside = document.querySelector("aside")
         aside.classList.toggle("abrirAside")
         btn.classList.toggle("extenderBtn")
-        /* const imgBtn = document.querySelector("body > button > img")
+        const imgBtn = document.querySelector("body > button > img")
         if(imgBtn.src == "http://127.0.0.1:5500/m2-entrega-projeto-individual-Mickel-Barros/src/assets/setaEsc.png"){
             imgBtn.src = "http://127.0.0.1:5500/m2-entrega-projeto-individual-Mickel-Barros/src/assets/seta.png"
             return
         }
-        imgBtn.src = "http://127.0.0.1:5500/m2-entrega-projeto-individual-Mickel-Barros/src/assets/setaEsc.png" */
+        imgBtn.src = "http://127.0.0.1:5500/m2-entrega-projeto-individual-Mickel-Barros/src/assets/setaEsc.png"
     })
 }
 abrirMenu()
@@ -60,11 +60,11 @@ export function fechar(){
     aside.classList.toggle("abrirAside")
     btn.classList.toggle("extenderBtn")
     const imgBtn = document.querySelector("body > button > img")
-    /* if(imgBtn.src == "http://127.0.0.1:5500/m2-entrega-projeto-individual-Mickel-Barros/src/assets/setaEsc.png"){
+    if(imgBtn.src == "http://127.0.0.1:5500/m2-entrega-projeto-individual-Mickel-Barros/src/assets/setaEsc.png"){
             imgBtn.src = "http://127.0.0.1:5500/m2-entrega-projeto-individual-Mickel-Barros/src/assets/seta.png"
             return
         }
-        imgBtn.src = "http://127.0.0.1:5500/m2-entrega-projeto-individual-Mickel-Barros/src/assets/setaEsc.png" */
+        imgBtn.src = "http://127.0.0.1:5500/m2-entrega-projeto-individual-Mickel-Barros/src/assets/setaEsc.png"
 }
 
 function usuarioComum(){
